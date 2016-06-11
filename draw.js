@@ -1,4 +1,5 @@
 var points = [];
+var stars = [0,0,0,0,0,0,0,0,0];
 //var displacement = 50;
 var roughness = 0.50;
 var pointsSize = Math.pow(2, Math.ceil(Math.log(canvas.width) / (Math.log(2))));
@@ -22,8 +23,17 @@ function fractal(origin, end, displacement) {
 
 
 function paint() {
-
-
+  //Stars
+  for (var i = 0; i < 200; i++) {
+    x = Math.random() * canvas.width;
+    y = Math.random() * canvas.height; 
+    radius = Math.random() * 1.1; 
+    ctx.beginPath();
+    ctx.fillStyle = '#fff';
+    ctx.arc(x, y, radius, 0, Math.PI * 2, true);
+    ctx.fill();
+    ctx.closePath();
+  }
 
 //Mountain 3
 fractal(canvas.height/2, canvas.height/2, 150);
