@@ -9,7 +9,20 @@ body {
 	padding: 0;
 }
 
+#button {
+	display: block;
+}
+
 #canvas {
 	display: block;	
+	background-color: transparent;
+	z-index: 2;
+	position: absolute;
+}
+
+#canvas-star {
+	display: block;
 	background-color: #15203A;
+	z-index: 1;
+	position: absolute;
 }
