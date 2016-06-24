@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:600);
+
 html {
 	height: 100%;
 }
@@ -9,9 +11,39 @@ body {
 	padding: 0;
 }
 
+.about {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #361252;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 3;
+}
+
+.about:hover {
+	background-color: #652496;
+}
+
 #button {
 	display: block;
+	cursor: pointer;
+	position: absolute;
+	text-align: center;
+	color: #fff;
+	width: 10%;
+	left: 45%;
+	top: 50%;
+	font-family: 'Dosis', sans-serif;
+	font-size: 28px;
+	z-index: 3;
 }
+
+#button:hover {
+	background-color: #652496;
+}
+
 
 #canvas {
 	display: block;	
