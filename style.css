@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis:600);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,900);
 
 html {
 	height: 100%;
@@ -11,7 +12,39 @@ body {
 	padding: 0;
 }
 
-.about {
+#close {
+	position: absolute;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	top: 10px;
+	right: 10px;
+}
+
+#close:hover {
+	cursor: pointer;
+}
+
+#about-popup {
+	position: absolute;
+	width:24%;
+	left:38%;
+	top: 20%;
+	background-color: #000;
+	padding: 24px;
+	padding-top: 32px;
+	z-index: 5;
+	display: none;
+}
+
+#about-popup span {
+	color: #fff;
+	z-index: 5;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+#about {
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
@@ -22,8 +55,37 @@ body {
 	z-index: 3;
 }
 
-.about:hover {
+#about:hover {
 	background-color: #652496;
+	cursor: pointer;
+}
+
+#title {
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	text-align: center;
+	color: #fff;
+	width: 15%;
+	left: 42.5%;
+	top: 32%;
+	font-family: 'Raleway', sans-serif;
+	font-size: 46px;
+	font-weight: 900;
+	z-index: 3;
+}
+
+#author {
+	position: absolute;
+	text-align: center;
+	color:#fff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	font-weight: 200;
+	width: 6%;
+	left:47%;
+	bottom: 8px;
+	z-index: 3;
 }
 
 #button {
@@ -34,9 +96,9 @@ body {
 	color: #fff;
 	width: 10%;
 	left: 45%;
-	top: 50%;
+	top: 46%;
 	font-family: 'Dosis', sans-serif;
-	font-size: 28px;
+	font-size: 24px;
 	z-index: 3;
 }
 
